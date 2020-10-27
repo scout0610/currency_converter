@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -11,26 +12,105 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <Button
-            android:id="@+id/btn_update"
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Update"/>
-        <Button
-            android:id="@+id/btn_remove"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Remove"/>
-        <Button
-            android:id="@+id/btn_insert"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Insert"/>
+            android:textSize="30dp"
+            android:text="Currency Converter"
+            android:padding="10dp"/>
+
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/my_list"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Amount"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/txtamount"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="FROM"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/from"
+            android:layout_width="match_parent"
+            android:layout_height="65dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="TO"
+            android:padding="10dp"/>
+
+        <Spinner
+            android:id="@+id/to"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Result"
+            android:padding="10dp"/>
+        <EditText
+            android:id="@+id/txtresult"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"
+            android:textSize="30dp"
+            android:padding="10dp">
+
+        </Button>
+
+    </LinearLayout>
 
 </LinearLayout>
